@@ -3,14 +3,23 @@ import { StyleSheet, Text, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import MainScreen from './screens/MainScreen';
+import ExerciseScreen from './screens/ExerciseScreen';
+import ListScreen from './screens/ListScreen';
+import ChalScreen from './screens/ChalScreen';
 
 const Stack = createStackNavigator();
 
 export default function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator>
-        <Stack.Screen name="Home" component={TestScreen}></Stack.Screen>
+      <Stack.Navigator
+      initialRouteName='Chal'
+      screenOptions={{
+        title: 'App'
+      }}>
+        <Stack.Screen name="Home" component={MainScreen}></Stack.Screen>
+        <Stack.Screen name="Exercise" component={ExerciseScreen}></Stack.Screen>
+        <Stack.Screen name="Chal" component={ChalScreen}></Stack.Screen>
       </Stack.Navigator>
     </NavigationContainer>
   );
