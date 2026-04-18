@@ -5,7 +5,9 @@ import { createStackNavigator } from '@react-navigation/stack';
 import MainScreen from './screens/MainScreen';
 import ExerciseScreen from './screens/ExerciseScreen';
 import ListScreen from './screens/ListScreen';
+import ChScreen from './screens/ChScreen';
 import ChalScreen from './screens/ChalScreen';
+import ButtonScreen from './screens/ButtonScreen';
 
 const Stack = createStackNavigator();
 
@@ -13,13 +15,13 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator
-      initialRouteName='Chal'
+      initialRouteName='Button'
       screenOptions={{
         title: 'App'
       }}>
         <Stack.Screen name="Home" component={MainScreen}></Stack.Screen>
         <Stack.Screen name="Exercise" component={ExerciseScreen}></Stack.Screen>
-        <Stack.Screen name="Chal" component={ChalScreen}></Stack.Screen>
+        <Stack.Screen name="Button" component={ButtonScreen}></Stack.Screen>
       </Stack.Navigator>
     </NavigationContainer>
   );
