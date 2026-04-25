@@ -85,7 +85,7 @@ const styles = StyleSheet.create({
 
     touchableBox: {
         borderWidth: 2,
-        borderColor: '#ef4444',
+        borderColor: 'blue',
         paddingVertical: 12,
         paddingHorizontal: 20,
         borderRadius: 12,
