@@ -14,6 +14,11 @@ const MenuScreen = (props) => {
             <TouchableOpacity
                 onPress={() => props.navigation.navigate('Students')}
             >
+                <Text style={styles.touch}>Go to s</Text>
+            </TouchableOpacity>
+            <TouchableOpacity
+                onPress={() => props.navigation.navigate('Profile')}
+            >
                 <Text style={styles.touch}>Go to Students</Text>
             </TouchableOpacity>
         </View>
