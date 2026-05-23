@@ -7,21 +7,26 @@ const MenuScreen = (props) => {
         <View>
             
             <Text style={styles.text}>Welcome to menu</Text>
-            <Button
-                title='Go to List'
-                onPress={() => props.navigation.navigate('List')}
-            ></Button>
-            <TouchableOpacity
-                onPress={() => props.navigation.navigate('Students')}
-            >
-                <Text style={styles.touch}>Go to s</Text>
-            </TouchableOpacity>
+           
+            
             <TouchableOpacity
                 onPress={() => props.navigation.navigate('Profile')}
             >
                 <Text style={styles.touch}>Go to Students</Text>
             </TouchableOpacity>
+
+            <TouchableOpacity
+                onPress={() => props.navigation.navigate('Box')}
+            >
+                <Text style={styles.touch}>Go to BoxScreen</Text>
+            </TouchableOpacity>
+            <TouchableOpacity
+                onPress={() => props.navigation.navigate('Posts')}
+            >
+                <Text style={styles.touch}>Go to PostsScreen</Text>
+            </TouchableOpacity>
         </View>
+    
     )
 }
 const styles = StyleSheet.create({
